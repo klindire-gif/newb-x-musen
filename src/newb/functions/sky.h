@@ -14,7 +14,7 @@ struct nl_skycolor {
 vec3 spectrum(float x) {
   vec3 s = vec3(x-0.5, x, x+0.5);
   s = smoothstep(1.0,0.0,abs(s));
-  return s*s;
+  return s*s*0.85;
 }
 
 vec3 getUnderwaterCol(vec3 FOG_COLOR) {
